@@ -131,7 +131,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex gap-4">
             {[
-              { icon: FaGithub, url: "https://github.com/KISHOREKUMAR2506" },
+              { icon: FaGithub, url: "https://github.com/KishoreKumar-I" },
               { icon: FaLinkedin, url: "https://www.linkedin.com/in/kishore-kumar-i-ece/" },
             ].map((social, index) => (
               <motion.a
