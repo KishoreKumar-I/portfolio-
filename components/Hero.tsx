@@ -73,7 +73,7 @@ const Hero = () => {
             <div className="bg-[#090909] w-full h-full rounded-full p-2">
               <div className="relative w-full h-full rounded-full overflow-hidden">
                 <Image
-                  src="/profile3.jpg"
+                  src="/kishore_profile.jpg"
                   alt="Profile"
                   fill
                   className="object-cover rounded-full"
