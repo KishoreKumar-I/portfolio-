@@ -73,7 +73,7 @@ const Hero = () => {
             <div className="bg-[#090909] w-full h-full rounded-full p-2">
               <div className="relative w-full h-full rounded-full overflow-hidden">
                 <Image
-                  src="/kishore_profile.jpg"
+                  src="/kishore_profile.jpeg"
                   alt="Profile"
                   fill
                   className="object-cover rounded-full"
@@ -132,7 +132,7 @@ const Hero = () => {
           <div className="flex gap-4">
             {[
               { icon: FaGithub, url: "https://github.com/KishoreKumar-I" },
-              { icon: FaLinkedin, url: "https://www.linkedin.com/in/kishorekumar-i/" },
+              { icon: FaLinkedin, url: "https://www.linkedin.com/in/ikishorekumar/" },
             ].map((social, index) => (
               <motion.a
                 key={index}
