@@ -21,8 +21,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^6.22.0",
     "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.8.1",
-    "typewriter-effect": "^2.21.0"
+    "tsparticles": "^3.8.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
