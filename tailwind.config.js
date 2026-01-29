@@ -4,66 +4,41 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#00D9FF',
+        secondary: '#6366F1',
+        accent: '#F59E0B',
+        success: '#10B981',
+        danger: '#EF4444',
+        'dark-bg': '#0A0E27',
+        'dark-surface': '#151932',
+        'light-bg': '#F8FAFC',
+        'text-primary': '#E2E8F0',
+        'text-secondary': '#94A3B8',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'shimmer': 'shimmer 2s infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'grid': 'linear-gradient(to right, #80808012 1px, transparent 1px), linear-gradient(to bottom, #80808012 1px, transparent 1px)',
-      },
-      backgroundSize: {
-        'grid': '24px 24px',
-      },
-
-        theme: {
-          extend: {
-            fontFamily: {
-              stylish: ['Space Grotesk', 'sans-serif'],
-            },
-          },
-        },
-      
-
-
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: '100%',
-            color: 'inherit',
-            a: {
-              color: 'inherit',
-              textDecoration: 'none',
-            },
-            h1: {
-              color: 'inherit',
-            },
-            h2: {
-              color: 'inherit',
-            },
-            h3: {
-              color: 'inherit',
-            },
-            h4: {
-              color: 'inherit',
-            },
-            p: {
-              color: 'inherit',
-            },
-          },
-        },
-      },
-      container: {
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
-        },
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-} 
+  plugins: [],
+}
