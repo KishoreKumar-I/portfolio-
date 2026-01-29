@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaNetworkWired, FaShieldAlt, FaMicrochip, FaBrain, FaChartLine, FaCloud } from 'react-icons/fa';
+import { FaChartLine, FaCloud, FaExternalLinkAlt, FaGithub, FaMicrochip, FaNetworkWired, FaShieldAlt } from 'react-icons/fa';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -118,16 +118,16 @@ export default function Projects() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#6366F1] rounded-full filter blur-[150px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00D9FF] to-[#6366F1]">
               Featured Projects
             </span>

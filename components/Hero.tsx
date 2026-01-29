@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { FaArrowRight, FaDownload, FaExchangeAlt, FaExternalLinkAlt, FaExternalLinkSquareAlt } from 'react-icons/fa';
+import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -222,14 +222,14 @@ export default function Hero() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="relative z-10 max-w-7xl mx-auto px-6 py-20"
+        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Text Content */}
           <div>
             {/* Greeting */}
-            <motion.div variants={itemVariants} className="mb-6">
-              <span className="inline-block px-4 py-2 bg-[#00D9FF]/10 border border-[#00D9FF]/30 rounded-full text-[#00D9FF] text-sm font-medium backdrop-blur-sm">
+            <motion.div variants={itemVariants} className="mb-4 sm:mb-6">
+              <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#00D9FF]/10 border border-[#00D9FF]/30 rounded-full text-[#00D9FF] text-xs sm:text-sm font-medium backdrop-blur-sm">
                   🤞🏻 Heyy, I'm
               </span>
             </motion.div>
@@ -237,7 +237,7 @@ export default function Hero() {
             {/* Name - Made Bigger */}
             <motion.h1
               variants={itemVariants}
-              className="text-7xl md:text-8xl lg:text-7xl font-bold mb-8 tracking-tight leading-[0.95]"
+              className="text-4xl sm:text-6xl md:text-8xl lg:text-5xl font-bold mb-4 sm:mb-8 tracking-tight leading-[0.95]"
             >
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00D9FF] via-[#6366F1] to-[#0bf5ab] drop-shadow-2xl">
                 Kishore Kumar I
@@ -247,7 +247,7 @@ export default function Hero() {
             {/* Main Tagline */}
             <motion.p
               variants={itemVariants}
-              className="text-lg md:text-lg text-[#94A3B8] mb-14 leading-relaxed"
+              className="text-base sm:text-lg text-[#94A3B8] mb-8 sm:mb-14 leading-relaxed"
             >
               From <span className="text-[#00D9FF] font-semibold">Coding to Connectivity</span> – I <span className="text-[#63f1d5] font-semibold">Build, Break, and Reimagine</span> Tech!
             </motion.p>
@@ -255,7 +255,7 @@ export default function Hero() {
             {/* macOS-Style Floating Dock - Made Bigger */}
             <motion.div
               variants={itemVariants}
-              className="flex justify-center mb-14"
+              className="flex justify-center mb-8 sm:mb-14"
             >
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -265,7 +265,7 @@ export default function Hero() {
               >
                 {/* Main Dock Container */}
                 <div 
-                  className="relative flex items-end gap-3 px-6 py-4 bg-[#2A2A2A]/80 backdrop-blur-2xl rounded-[28px] shadow-[0_10px_40px_rgba(0,0,0,0.5)] border border-white/10"
+                  className="relative flex items-end gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-[#2A2A2A]/80 backdrop-blur-2xl rounded-[20px] sm:rounded-[28px] shadow-[0_10px_40px_rgba(0,0,0,0.5)] border border-white/10"
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
                   {dockItems.map((item, index) => {
@@ -302,7 +302,7 @@ export default function Hero() {
                             stiffness: 400,
                             damping: 25
                           }}
-                          className="relative flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#3A3A3A] to-[#2A2A2A] cursor-pointer shadow-lg overflow-hidden"
+                          className="relative flex items-center justify-center w-12 sm:w-16 h-12 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#3A3A3A] to-[#2A2A2A] cursor-pointer shadow-lg overflow-hidden"
                           style={{
                             transformOrigin: "bottom"
                           }}
@@ -352,7 +352,7 @@ export default function Hero() {
             {/* CTA Buttons - Aligned and Same Size */}
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap gap-4 justify-center mb-12"
+              className="flex flex-wrap gap-3 sm:gap-4 justify-center mb-8 sm:mb-12"
             >
               <motion.a
                 href="https://www.linkedin.com/in/ikishorekumar"
@@ -360,11 +360,11 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 217, 255, 0.4)' }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative px-8 py-4 min-w-[220px] bg-gradient-to-r from-[#00D9FF] to-[#6366F1] text-[#0A0E27] font-semibold rounded-xl overflow-hidden transition-all duration-300 flex items-center justify-center"
+                className="group relative px-5 sm:px-8 py-3 sm:py-4 min-w-[150px] sm:min-w-[220px] text-sm sm:text-base bg-gradient-to-r from-[#00D9FF] to-[#6366F1] text-[#0A0E27] font-semibold rounded-lg sm:rounded-xl overflow-hidden transition-all duration-300 flex items-center justify-center"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   LinkedIn
-                  <FaExternalLinkAlt className="group-hover:translate-x-1 transition-transform" />
+                  <FaExternalLinkAlt className="group-hover:translate-x-1 transition-transform text-xs sm:text-base" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6366F1] to-[#00D9FF] opacity-0 group-hover:opacity-100 transition-opacity" />
               </motion.a>
@@ -374,11 +374,11 @@ export default function Hero() {
                 download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group px-8 py-4 min-w-[220px] bg-[#151932]/50 backdrop-blur-md border-2 border-[#00D9FF]/50 text-[#00D9FF] font-semibold rounded-xl hover:bg-[#00D9FF]/10 transition-all duration-300 flex items-center justify-center"
+                className="group px-5 sm:px-8 py-3 sm:py-4 min-w-[150px] sm:min-w-[220px] text-sm sm:text-base bg-[#151932]/50 backdrop-blur-md border-2 border-[#00D9FF]/50 text-[#00D9FF] font-semibold rounded-lg sm:rounded-xl hover:bg-[#00D9FF]/10 transition-all duration-300 flex items-center justify-center"
               >
                 <span className="flex items-center gap-2">
-                  <FaDownload className="group-hover:animate-bounce" />
-                  Download Resume
+                  <FaDownload className="group-hover:animate-bounce text-xs sm:text-base" />
+                  Resume
                 </span>
               </motion.a>
             </motion.div>
@@ -387,20 +387,20 @@ export default function Hero() {
           {/* Right Side - Profile Picture */}
           <motion.div
             variants={itemVariants}
-            className="flex justify-center items-center"
+            className="flex justify-center items-center mt-8 sm:mt-0"
           >
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="relative w-72 h-72 md:w-96 md:h-96"
+              className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96"
             >
               {/* Image Container */}
-              <div className="relative rounded-2xl p-1 w-full h-[450px] md:h-[440px] flex items-center justify-center overflow-hidden">
+              <div className="relative rounded-xl sm:rounded-2xl p-1 w-full h-full flex items-center justify-center overflow-hidden">
                 <Image
                   src="/kishore_profile_rbg.png"
                   alt="Profile Picture"
                   width={600}
                   height={600}
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-lg sm:rounded-xl"
                   priority
                 />
               </div>

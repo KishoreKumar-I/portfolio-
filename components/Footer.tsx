@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaRocket, FaCode } from 'react-icons/fa';
+import { FaCode, FaEnvelope, FaGithub, FaHeart, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,8 +29,8 @@ export default function Footer() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#6366F1] rounded-full filter blur-[120px]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8 sm:mb-12">
           {/* Brand Section */}
           <div>
             <motion.div

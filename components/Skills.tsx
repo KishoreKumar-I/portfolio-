@@ -88,26 +88,26 @@ const Skills: FC = () => {
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#00D9FF] rounded-full filter blur-[150px] animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#6366F1] to-[#00D9FF]">
               Technical Skills
             </span>
           </h2>
-          <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-[#94A3B8] max-w-2xl mx-auto px-2">
             Expertise across problem solving, networking, simulation tools, and DevOps technologies
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto">
           {categories.map((category) => {
             const Icon = category.icon;
             const isHovered = hoveredCard === category.id;
@@ -123,7 +123,7 @@ const Skills: FC = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="relative h-[400px] group cursor-pointer"
+                className="relative h-[300px] sm:h-[350px] md:h-[400px] group cursor-pointer"
                 onMouseEnter={() => !isMobile && setHoveredCard(category.id)}
                 onMouseLeave={() => !isMobile && setHoveredCard(null)}
                 onClick={() => isMobile && toggleCard(category.id)}

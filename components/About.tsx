@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaBriefcase, FaCertificate, FaGraduationCap, FaTrophy } from 'react-icons/fa';
+import { FaBriefcase, FaCertificate, FaGraduationCap } from 'react-icons/fa';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(0);
@@ -104,28 +104,28 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="relative py-24 bg-gradient-to-br from-[#0A0E27] to-[#151932] overflow-hidden">
+    <section id="about" className="relative py-16 sm:py-24 bg-gradient-to-br from-[#0A0E27] to-[#151932] overflow-hidden">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#00D9FF] rounded-full filter blur-[120px] animate-pulse" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#6366F1] rounded-full filter blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00D9FF] to-[#6366F1]">
               About Me
             </span>
           </h2>
-          <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-[#94A3B8] max-w-2xl mx-auto px-2">
             An innovative developer focused on creating seamless real-time experiences through creative problem-solving and emerging technologies
           </p>
         </motion.div>

@@ -73,23 +73,23 @@ export default function Achievements() {
   };
 
   return (
-    <section id="achievements" className="relative py-24 bg-gradient-to-br from-[#0A0E27] via-[#151932] to-[#0A0E27] overflow-hidden">
+    <section id="achievements" className="relative py-16 sm:py-24 bg-gradient-to-br from-[#0A0E27] via-[#151932] to-[#0A0E27] overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-96 h-96 bg-[#F59E0B] rounded-full filter blur-[150px] animate-pulse" />
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#6366F1] rounded-full filter blur-[150px] animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#F59E0B] to-[#EF4444]">
               Achievements & Recognition
             </span>
