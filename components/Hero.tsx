@@ -394,7 +394,7 @@ export default function Hero() {
               className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96"
             >
               {/* Image Container */}
-              <div className="relative rounded-xl sm:rounded-2xl p-1 w-full h-full flex items-center justify-center overflow-hidden">
+              <div className="relative rounded-xl sm:rounded-2xl p-1 w-full h-[450px] flex items-center justify-center overflow-hidden">
                 <Image
                   src="/kishore_profile_rbg.png"
                   alt="Profile Picture"
@@ -413,7 +413,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-8 sm:bottom-12 hidden sm:block"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
