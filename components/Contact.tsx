@@ -48,13 +48,13 @@ export default function Contact() {
       label: 'Phone',
       value: '+91 7845643110',
       link: 'tel:+917845643110',
-      color: 'from-[#10B981] to-[#00D9FF]'
+      color: 'from-[#10D000] to-[#00D9FF]'
     },
     {
       icon: FaMapMarkerAlt,
       label: 'Location',
       value: 'Chennai, India',
-      link: '#',
+      // link: '#',
       color: 'from-[#6366F1] to-[#8B5CF6]'
     }
   ];
