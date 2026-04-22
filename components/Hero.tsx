@@ -396,7 +396,7 @@ export default function Hero() {
               {/* Image Container */}
               <div className="relative rounded-xl sm:rounded-2xl p-1 w-full h-[450px] flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/kishore_profile_rbg.png"
+                  src="/kishore_new_profile.png"
                   alt="Profile Picture"
                   width={600}
                   height={600}
