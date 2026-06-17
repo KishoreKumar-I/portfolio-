@@ -358,8 +358,6 @@ export default function About() {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-[#10B981]"></span>
             </span>
             <span className="text-[#10B981] font-semibold">Available for Opportunities</span>
-            <span className="text-[#94A3B8]">•</span>
-            <span className="text-[#94A3B8]">Expected Graduation: May 2026</span>
           </div>
         </motion.div>
       </div>
